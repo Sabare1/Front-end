@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(52, 68, 159);
+        font-family: "Montserrat", "sans-serif";
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      h2.intro {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+
+      h2 {
+        border-top: 2px solid black;
+        padding: 10px 0;
+        text-align: center;
+        color: white;
+        background-color: black;
+      }
+
+      p {
+        margin: 0 10px;
+        text-align: left;
+        overflow: hidden;
+      }
+
+      img {
+        width: 40px;
+        margin-top: 10px;
+      }
+
+      div {
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        margin: 10px;
+        float: left;
+        text-align: center;
+        box-shadow: none;
+        transition: width 0.5s, height 0.5s;
+      }
+
+      div:hover {
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+        box-shadow: 1px 1px 16px rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Not GFG</h1>
+    <h2 class="intro">Welcome to webdevelopment tutorial</h2>
+    <div class="html">
+      <img id="html" src="/html.png" alt="image_of_html" />
+      <h2>HTML tutorial</h2>
+      <p>
+        HyperText Markup Language is the standard language used to create and
+        structure content.
+      </p>
+    </div>
+    <div class="css">
+      <img id="css" src="/css.png" alt="image_of_css" />
+      <h2>CSS tutorial</h2>
+      <p>
+        Cascading Style Sheet is a language used to style and design HTML
+        content on a webpage.
+      </p>
+    </div>
+    <div class="javascript">
+      <img id="js" src="/js.png" alt="image_of_js" />
+      <h2>JavaScript tutorial</h2>
+      <p>
+        JavaScript is a programming language used to make web pages interactive
+        and dynamic.
+      </p>
+    </div>
+  </body>
+</html>

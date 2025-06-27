@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techcon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #bcf5be;
+        font-family: "Open Sans", sans-serif;
+        font-size: large;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h1 {
+        background-color: #22d606;
+        color: white;
+        width: 100%;
+        height: 100px;
+        padding-top: 45px;
+      }
+
+      h2 {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: blue;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 16px;
+      }
+
+      th,
+      td,
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+      }
+
+      table {
+        padding-bottom: 20px;
+      }
+
+      div {
+        margin: auto;
+        background-color: #f1f1f1;
+        box-shadow: 1px 1px 5px black;
+        width: 75%;
+      }
+
+      form {
+        padding-left: 40px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        padding: 10px 0;
+      }
+      li.nav-bar {
+        display: inline-block;
+      }
+      div.nav-bar {
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        margin-top: -35px;
+        box-shadow: none;
+      }
+      a:hover {
+        background-color: #a1a1a1;
+      }
+      p {
+        padding-left: 20px;
+      }
+
+      input[type="text"] {
+        padding: 10px 10px;
+        margin: 10px;
+      }
+
+      input[type="button"] {
+        font-size: 15px;
+        margin: 30px 60px;
+      }
+      #submit:hover {
+        cursor: pointer;
+        background-color: green;
+        color: white;
+      }
+      strong {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Techcon 2025</h1>
+    <div class="nav-bar">
+      <ul>
+        <li class="nav-bar"><a href="#About">About</a></li>
+        <li class="nav-bar"><a href="#Event">Schedule</a></li>
+        <li class="nav-bar"><a href="#Speakers">Speakers</a></li>
+        <li class="nav-bar"><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="About">
+      <h2>About the event</h2>
+      <p>
+        GeeksforGeeks TechCon 2025 brings together leading minds in programming,
+        tech, and innovation. Join us for a day of insightful talks, hands-on
+        workshops, and an opportunity to network with fellow geeks and
+        professionals from all around the world.
+      </p>
+    </div>
+    <div id="Event">
+      <h2>Event Schedule</h2>
+      <table style="width: 95%; margin: auto; padding-bottom: 5px">
+        <tr>
+          <th style="width: 20%">Time</th>
+          <th>Session</th>
+          <th>Contest</th>
+        </tr>
+
+        <tr>
+          <td>9:00 AM</td>
+          <td>Opening Keynote</td>
+          <td>Geeks for geeks coding platform</td>
+        </tr>
+        <tr>
+          <td>10:30 AM</td>
+          <td>Understanding AI and ML</td>
+          <td>Mr. Arvind Kumar</td>
+        </tr>
+        <tr>
+          <td>01.00 PM</td>
+          <td>Lunch break</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>01.00 PM</td>
+          <td>Exploring the future of cloud computing</td>
+          <td>Mr. Selvaragavan</td>
+        </tr>
+        <tr>
+          <td>02:30 PM</td>
+          <td>Impact of AI in the IT industry</td>
+          <td>Ms. Lily</td>
+        </tr>
+      </table>
+    </div>
+    <div id="Speakers">
+      <h2>Speakers</h2>
+      <ul>
+        <li><strong>Mr. Arvind Kumar-</strong> AI ML expert</li>
+        <li><strong>Mr. Selvaragavan-</strong> Cloud Engineer at Google</li>
+        <li><strong>Ms. Lily-</strong> Research consultant at Amazon</li>
+      </ul>
+    </div>
+    <div id="Contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="Name" class="name">First Name</label>
+        <input type="text" for="Name" placeholder="Name" class="name" /><br />
+        <label style="padding-right: 45px" for="Email" class="email"
+          >Email</label
+        >
+        <input
+          type="text"
+          for="Email"
+          placeholder="Email"
+          class="email"
+        /><br />
+        <label for="Query" style="padding-right: 39px">Query</label>
+        <input
+          type="text"
+          for="Query"
+          placeholder="Enter your query"
+          style="width: 300px; height: 60px"
+        /><br />
+        <input type="button" value="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
