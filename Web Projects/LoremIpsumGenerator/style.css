@@ -1,0 +1,65 @@
+body{
+    font-family: "Rubik", sans-serif;
+    background-color: rgb(127, 128, 129);
+}
+
+h1 {
+    text-align: center; 
+}
+
+div {
+    width: 100%;
+
+}
+
+.inner-div {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    height: 500px;
+    background-color: white;
+}
+
+.content {
+    border: 2px solid #ff0000;
+    background-color: inherit;
+    width:85%;
+    height: 125px;
+    margin: auto;
+    margin-top: 30px;
+    padding:10px;
+    overflow:auto;
+}
+#button{
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgb(153, 244, 17);
+    margin: auto;
+    font-size: medium;
+}
+
+p{
+    margin-left: 10px;
+}
+
+#copy-div{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: inherit;
+    width:100%;
+}
+
+#copy{
+    width:30px;
+    height:30px;
+    border: 1px solid black;
+}
+
+input{
+    margin-left: 10px;
+}
+
+.result{
+    background-color: inherit;
+}
