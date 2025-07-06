@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bar-container {
+        border: 1px solid red;
+      }
+      .bar {
+        height: 15px;
+        background-color: red;
+        width: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar-container">
+      <div class="bar"></div>
+    </div>
+    <input type="button" value="click" onClick="load()" />
+    <script>
+      function load() {
+        const bar = document.querySelector(".bar");
+        let width = 5;
+        console.log(width);
+        var stop = setInterval(grow, 10);
+
+        function grow() {
+          if (width >= 100) {
+            clearInterval(stop);
+          } else {
+            width++;
+            bar.style.width = width + "%";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

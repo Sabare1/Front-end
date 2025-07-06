@@ -1,0 +1,126 @@
+body{
+    background-image: linear-gradient(#0398fc, #b350fa);
+    height: 95vh;
+    background-position: fixed;
+    background-size: cover;
+    font-family: "Lora", serif;
+}
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+.container{
+    position: relative;
+}
+
+.button-container{
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+
+input{
+    margin: 40px 20px; 
+    padding: 5px 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px black;
+    border:none;
+    transition-duration: 0.3s;
+}
+
+input:hover{
+    cursor: pointer;
+}
+.submit{
+    background-color: rgb(6, 201, 58);
+}
+
+.submit:hover{
+    background-color: rgb(4, 107, 32);
+    color:white;
+}
+
+.fail{
+    background-color: rgb(235, 40, 40);
+}
+
+.fail:hover{
+    background-color: rgb(150, 26, 26);
+    color:white;
+}
+
+.info{
+    padding: 5px 47px;
+    background-color: rgb(49, 53, 247);
+}
+
+.info:hover{
+    background-color: rgb(30, 32, 150);
+    color:white;
+}
+
+.warn{
+    padding: 5px 57px;
+    background-color: rgb(255, 243, 13);
+}
+
+.warn:hover{
+    background-color: rgb(145, 138, 6);
+    color:white;
+}
+
+.bar{
+    grid-column: 1/ span 5;
+    height: 4px;
+    margin-bottom: 1px;
+}
+
+#toast-container{
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 5fr;
+    height:40px;
+    width: 300px;
+    visibility: hidden;
+    border-radius: 3px;
+    right: 50px;
+}
+
+#toast-container.show{
+    visibility: visible;
+    position: fixed;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein{
+    from{right: 0; opacity:0;}
+    to{right: 50px; opacity:1;}
+}
+
+@keyframes fadeout{
+    from{right: 50px; opacity:1;}
+    to{right: 0; opacity:0;}
+}
+
+@-webkit-keyframes fadeout{
+    from{right: 0; opacity:0;}
+    to{right: 50px; opacity:1;}
+}
+
+@-webkit-keyframes fadeout{
+    from{right: 50px; opacity:1;}
+    to{right: 0; opacity:0;}
+}
+
+.toast-content{
+    margin-top: 8px;
+    margin-left: 0;
+}
+img{
+    margin: 5px 0 0 12px;
+    height: 28px;
+    width: 28px;
+}
