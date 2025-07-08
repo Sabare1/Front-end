@@ -4,23 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step Progress</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Step by step progress bar</h1>
     <div class="container">
-      <div>step 1</div>
-      <div>step 2</div>
-      <div>step 3</div>
-      <div>step 4</div>
-      <div>step 5</div>
-      <div class="bar"></div>
+      <div class="step1">step 1</div>
+      <div class="step2">step 2</div>
+      <div class="step3">step 3</div>
+      <div class="step4">step 4</div>
+      <div class="step5">step 5</div>
+      <div class="bar-container"><div class="bar"></div></div>
       <div class="form-container">
         <p>Welcome to step 1</p>
         <div class="button-container">
-          <input type="button" class="prev-btn" onclick="prevEvent()" />
-          <input type="button" class="next-btn" onclick="nextEvent()" />
+          <input
+            type="button"
+            class="prev-btn"
+            value="previous"
+            onclick="prevEvent()"
+          />
+          <input
+            type="button"
+            class="next-btn"
+            value="next"
+            onclick="nextEvent()"
+          />
         </div>
       </div>
     </div>
+    <script src="App.js"></script>
   </body>
 </html>
