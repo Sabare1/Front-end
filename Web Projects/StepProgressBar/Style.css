@@ -12,19 +12,15 @@ h1{
     border: 1px solid black;
     padding: 10px 25px;
 }
-.bar-container{
-    grid-column: 1/span5;
-    background-color: #ccc;
-}
-.bar{
-    
+
+.bar{   
     height: 10px;
     border: 1px solid black;
     width: 0%;
 }
 .form-container{
     text-align: center;
-    grid-column: 1/span5;
+    grid-column: 1/span 5;
 }
 .button-container{
     float:right;
