@@ -13,6 +13,10 @@ h1{
     padding: 10px 25px;
 }
 
+.bar-container{
+    grid-column: 1/span 5;
+}
+
 .bar{   
     height: 10px;
     border: 1px solid black;
