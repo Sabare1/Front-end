@@ -18,17 +18,17 @@ h1{
     float: right;
 }
 
-.form-container .active-form{
+.active-form{
     display: block;
 }
 
-.step-container .active-step{
+.active-step{
     color: green;
 }
-.step-container .inactive-step{
+.step{
     color: #ccc;
 }
 
-.form-container .inactive-form{
+.form{
     display: none;
 }
