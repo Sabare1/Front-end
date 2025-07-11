@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+}
+.step-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+}
+
+.bar{
+    border: 1px solid black;
+    height: 10px;
+}
+
+.form-container{
+    text-align: center;
+}
+.button-container{
+    float: right;
+}
+
+.form-container .active-form{
+    display: block;
+}
+
+.step-container .active-step{
+    color: green;
+}
+.step-container .inactive-step{
+    color: #ccc;
+}
+
+.form-container .inactive-form{
+    display: none;
+}
