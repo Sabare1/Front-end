@@ -13,6 +13,7 @@ let step = 0;
 
 function prev(){
     let percent = (step/(5))*100;
+    percent += 6;
     if(step <= 0){
         step = 0;
     }
@@ -23,8 +24,9 @@ function prev(){
 }
 
 function next(){
-    console.log(step);
+    
     let percent = (step/(5))*100;
+    percent += 6;
     if(step >= 5){
         step = 5;
     }
@@ -36,6 +38,9 @@ function next(){
 
 function prevLoad(elem, percent){
     let minPercent = percent - 20;
+    if(step == 5){
+        percent = 100;
+    }
     let temp = setInterval(frame, 10);
 
     function frame(){
@@ -51,6 +56,9 @@ function prevLoad(elem, percent){
 
 function nextLoad(elem, percent){
     let maxPercent = percent+20;
+    if(step == 4){
+        maxPercent -= 6;
+    }
     let temp = setInterval(frame, 10);
 
     function frame(){

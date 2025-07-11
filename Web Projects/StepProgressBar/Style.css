@@ -19,16 +19,23 @@ h1{
 
 .bar{   
     height: 10px;
-    border: 1px solid black;
-    width: 0%;
+    background-color: green;
+    width: 6%;
 }
 .form-container{
     text-align: center;
     grid-column: 1/span 5;
+    margin:10px 0;
+    background-color: #ccc;
 }
 .button-container{
     float:right;
+    margin: 10px;
 }
 .prev-btn{
     margin-right: 10px;
+}
+
+.step{
+    margin-left:25px;
 }
