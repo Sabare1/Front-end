@@ -6,29 +6,40 @@ h1{
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
 }
 
+.bar-container{
+    background-color: #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
 .bar{
     border: 1px solid black;
     height: 10px;
+    width: 5%;
+    transition: width 1s;
+    background-color: green;
 }
 
 .form-container{
+    margin-top: 20px;
+    border: 1px solid black;
     text-align: center;
+    height: 100px;
 }
 .button-container{
+    margin: 35px 20px 0 0;
     float: right;
 }
 
-.active-form{
-    display: block;
+.inactive-form{
+    display: none;
 }
 
-.active-step{
-    color: green;
-}
-.step{
+.inactive-step{
     color: #ccc;
 }
 
-.form{
-    display: none;
+.content{
+    margin-top: 10px;
+    font-size: large;
 }

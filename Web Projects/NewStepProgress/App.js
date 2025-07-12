@@ -1,39 +1,61 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let steps = document.querySelector(".step-container");
-    let forms = document.querySelector(".form-container");
+    let steps = document.querySelectorAll(".step");
+    let forms = document.querySelectorAll(".form");
     let currentStep = 0;
-    let percent = (currentStep/steps.length-1) * 100;
     let bar = document.querySelector(".bar");
+    let prevBtns = document.querySelectorAll(".prev-btn");
+    let nextBtns = document.querySelectorAll(".next-btn");
+
     function updateProgress(){
+        console.log(steps);
         steps.forEach((item , index)=> {
-            if(index === currentStep){
-                item.classList.add("active-step");
+            if(index !== currentStep){
+                item.classList.add("inactive-step");
             }
             else{
-                item.classList.remove("active-step");
+                item.classList.remove("inactive-step");
             }
         });
 
         forms.forEach((item, index) =>{
-            if(index === currentStep){
-                item.classList.add("active-form");
+            if(index !== currentStep){
+                item.classList.add("inactive-form");
             }
             else{
-                item.classList.remove("active-form");
+                item.classList.remove("inactive-form");
             }
         })
     }
-    function barUpdate(extraPercent){
-        percent = (currentStep/(steps.length-1)) * 100;
-        percent += extraPercent;
-        bar.style.width = percent+"%";
+    function barUpdate(newPercent){
+        bar.style.width = newPercent+"%";
     }
 
-    function prev(){
+    prevBtns.forEach((item, index)=>{
+        item.addEventListener("click", function(){
+            if(currentStep <= 0){
+                currentStep = 0;
+                return;
+            }
+            currentStep--;
+            let num = 5+((currentStep)/(steps.length))*100;
 
-    }   
+            updateProgress();
+            barUpdate(num);
+        })
+    })
 
-    function next(){
-
-    }
+    nextBtns.forEach((item, index)=>{
+        item.addEventListener("click", function(){
+            if(currentStep >= 5){
+                currentStep = 5;
+                return;
+            }
+            currentStep++;
+            let num = 5+((currentStep)/(steps.length))*100;
+            if(currentStep == 5)
+                num -= 5;
+            updateProgress();
+            barUpdate(num);
+        })
+    })
 });
