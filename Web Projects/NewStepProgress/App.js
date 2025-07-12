@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let nextBtns = document.querySelectorAll(".next-btn");
 
     function updateProgress(){
-        console.log(steps);
         steps.forEach((item , index)=> {
             if(index !== currentStep){
                 item.classList.add("inactive-step");

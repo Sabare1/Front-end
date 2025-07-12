@@ -1,6 +1,20 @@
 h1{
     text-align: center;
+    color: orangered;
 }
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: #faf36e;
+}
+
+.container{
+    padding:15px;
+    box-shadow: 1px 1px 3px black;
+    background-color: white;
+    border-radius: 3px;
+}
+
 .step-container{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
@@ -10,25 +24,32 @@ h1{
     background-color: #ccc;
     border-radius: 3px;
     overflow: hidden;
+    margin-top: 2px; 
 }
 
 .bar{
-    border: 1px solid black;
     height: 10px;
     width: 5%;
     transition: width 1s;
-    background-color: green;
+    background-color: #f06767;
 }
 
 .form-container{
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1.5px solid black;
     text-align: center;
     height: 100px;
+    border-radius: 3px;
+    background-color: #adcbed;
 }
+
 .button-container{
     margin: 35px 20px 0 0;
     float: right;
+}
+
+.prev-btn{
+    margin-right: 7px;
 }
 
 .inactive-form{
@@ -42,4 +63,10 @@ h1{
 .content{
     margin-top: 10px;
     font-size: large;
+}
+
+input{
+    background-color: #f06767;
+    color:white;
+    border-radius: 3px;
 }
