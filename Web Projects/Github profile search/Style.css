@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+}
+
+.search-bar{
+    width: 50%;
+    position: absolute;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 3px;
+}
+
+.card-output{
+    width: 40%;
+    height: 400px;
+    border: 1.5px solid black;
+    margin-top: 50px;
+    border-radius:3px ;
+}
