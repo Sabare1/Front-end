@@ -50,11 +50,11 @@ let userCardBuild = (response) =>{
         </div>
         <div class="info-container">
             <h2>${name}</h2>
-            <p>${info}</p>
+            <p style="font-style:italic">${info}</p>
             <ul>
-                <li>Followers <strong>${followers}</strong></li>
-                <li>Following <strong>${following}</strong></li>
-                <li>Repositories <strong>${pubRepos}</strong></li>
+                <li><strong>${followers}</strong>  Followers</li>
+                <li><strong>${following}</strong>  Following</li>
+                <li><strong>${pubRepos}</strong>  Repositories</li>
             </ul>
         </div>
         <div class="repo-container">
@@ -66,8 +66,8 @@ let userCardBuild = (response) =>{
 
 let errorFunction = (error) =>{
     let msg = `
-    <div>
-        <h2>
+    <div class="error">
+        <h2 style = "text-align: center">
             ${error}
         </h2>
     </div>
