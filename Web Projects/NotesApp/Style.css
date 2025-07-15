@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+.body{
+    position: relative;
+}
+.container{
+    margin:auto;
+    width : 60%;
+}
+
+.note{
+    border: 1px solid black;
+    width: 40%;
+    height: 180px;
+    text-align: center;
+    padding: 5px 0px 5px 5px;
+    
+}
+
+.title{
+    width:95%;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.body{
+    width:95%;
+    height: 105px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
