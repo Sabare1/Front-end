@@ -4,13 +4,15 @@ h1{
 }
 body{
     position: relative;
-    background-image: linear-gradient(#9a4af0, #56a8f0);
+    background-image: url('fountain-pen.jpg');
+    font-family: "TikTok Sans", sans-serif;
+    background-repeat: repeat;
 }
 .container{
     margin:auto;
     width : 60%;
     box-shadow: 1px 1px 5px black;
-    min-height: 474px;
+    min-height: 464px;
     padding: 10px;
     background-color: white;
     border-radius: 3px;
@@ -58,9 +60,16 @@ body{
     border-radius: 3px;
     border: none;
 }
+.add:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
 
 textarea{
     outline: 0;
     resize: none;
     overflow: auto;
+    font-family: "TikTok Sans", sans-serif;
 }

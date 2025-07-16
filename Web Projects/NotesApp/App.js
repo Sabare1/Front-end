@@ -1,3 +1,4 @@
+
 let saveNotes = () =>{
 
     let titleItems = document.querySelectorAll(".title");
@@ -56,11 +57,9 @@ let addBtn = document.querySelector(".add");
 addBtn.addEventListener("click", addNote);
 
 function loadNotes(){
-    const titleData = localStorage.getItem("titles");
-    const bodyData = localStorage.getItem("bodys");
-    let titleLen = (titleData !== null) ? titleData.length : 0;
-    let bodyLen = (bodyData !== null) ? bodyData.length : 0;
-    for(let i=0; i< titleLen && bodyLen; i++){
+    const titleData = JSON.parse(localStorage.getItem("titles") || []);
+    const bodyData = JSON.parse(localStorage.getItem("bodys") || []);
+    for(let i=0; i< Math.max(titleData.length, bodyData.length); i++){
         addNote(titleData[i], bodyData[i]);
     }
 }
