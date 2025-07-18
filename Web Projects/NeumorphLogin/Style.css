@@ -1,18 +1,25 @@
-
+body{
+    height: 97vh;
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 .container{
     margin: auto;
     text-align: center;
-    height: 97vh;
-    border: 1px solid black;
-    position: relative;
 }
 .login-container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
     border: 1px solid black;
-    padding: 50px 25px;
+    padding: 50px 35px;
+}
+
+input{
+    margin: 10px 0;
+    padding: 5px;
+    outline: none;
 }
 img{
     width: 50px;
