@@ -1,0 +1,26 @@
+
+.container{
+    margin: auto;
+    text-align: center;
+    height: 97vh;
+    border: 1px solid black;
+    position: relative;
+}
+.login-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 50px 25px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
