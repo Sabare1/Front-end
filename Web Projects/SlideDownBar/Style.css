@@ -1,14 +1,17 @@
 body{
     position: relative;
+    height: 1000px;
 }
 
 .nav-bar{
-    position: absolute;
+    position: fixed;
     display: flex;
     background-color: #f51714;
     width: auto;
     justify-content: flex-end;
     left: 65%;
+    top: -65px;
+    transition: 0.5s;
 }
 a{
     padding:10px;

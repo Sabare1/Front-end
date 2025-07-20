@@ -15,16 +15,33 @@
     </div>
     <h1>Cool scroll bar</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequatur
-      commodi laudantium! Pariatur in consectetur facere nisi veniam cumque unde
-      consequuntur aliquid deleniti necessitatibus possimus, placeat temporibus
-      magni libero, fugit harum ipsam non rem nam fuga at! Cum ipsam expedita
-      porro voluptates maiores repudiandae dignissimos itaque. Deserunt ut
-      porro, debitis iure excepturi doloremque veniam accusamus similique
-      dolores expedita saepe inventore modi dignissimos assumenda laboriosam
-      corrupti. Ullam pariatur repudiandae dolorum blanditiis exercitationem
-      consectetur nostrum eveniet, cupiditate harum odio cumque quam nisi culpa
-      corporis quaerat aliquid quae labore nulla sint?
+      Scroll down to see effects. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Nam consequatur commodi laudantium! Pariatur in
+      consectetur facere nisi veniam cumque unde consequuntur aliquid deleniti
+      necessitatibus possimus, placeat temporibus magni libero, fugit harum
+      ipsam non rem nam fuga at! Cum ipsam expedita porro voluptates maiores
+      repudiandae dignissimos itaque. Deserunt ut porro, debitis iure excepturi
+      doloremque veniam accusamus similique dolores expedita saepe inventore
+      modi dignissimos assumenda laboriosam corrupti. Ullam pariatur repudiandae
+      dolorum blanditiis exercitationem consectetur nostrum eveniet, cupiditate
+      harum odio cumque quam nisi culpa corporis quaerat aliquid quae labore
+      nulla sint?
     </p>
+    <script>
+      let navBar = document.querySelector(".nav-bar");
+      window.onscroll = function () {
+        scroll();
+      };
+      function scroll() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          navBar.style.top = "0";
+        } else {
+          navBar.style.top = "-60px";
+        }
+      }
+    </script>
   </body>
 </html>
