@@ -1,6 +1,9 @@
 body{
+    font-family: "Libre Baskerville", sans-serif;
     position: relative;
-    height: 1000px;
+    height: 580px;
+    font-size: 15px;
+    background-image: linear-gradient(#f5a351, #9d51f5);
 }
 
 .nav-bar{
@@ -23,5 +26,8 @@ a{
 }
 a:hover{
     background-color: #e4eb26;
-    color:black
+    color:black;
+}
+h1, b{
+    color: #07f0d5;
 }
