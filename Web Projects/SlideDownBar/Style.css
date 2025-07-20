@@ -1,0 +1,24 @@
+body{
+    position: relative;
+}
+
+.nav-bar{
+    position: absolute;
+    display: flex;
+    background-color: #f51714;
+    width: auto;
+    justify-content: flex-end;
+    left: 65%;
+}
+a{
+    padding:10px;
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+a:hover{
+    background-color: #e4eb26;
+    color:black
+}
